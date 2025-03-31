@@ -11,7 +11,7 @@ pipeline {
         }
         stage('Install Node.js') {
             steps {
-                sh 'apt-get update && apt-get install -y nodejs npm'
+                sh 'sudo apt-get update && sudo apt-get install -y nodejs npm'
             }
         }
         stage('Build Angular') {

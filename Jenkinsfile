@@ -24,7 +24,7 @@ pipeline {
 
         stage('Deploy') {
             steps {
-                sh 'docker-compose up --build -d'
+                sh 'docker build -t my-angular ./study2025.client && docker build -t my-api ./Study2025.Server && docker run -d -p 4200:80 my-angular && docker run -d -p 5000:80 my-api'
             }
         }
     }

@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Study2025.Server")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7c845f2777b9970f5cb765a553dad70c86acbf45")]
 [assembly: System.Reflection.AssemblyProductAttribute("Study2025.Server")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Study2025.Server")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

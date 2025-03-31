@@ -1,0 +1,16 @@
+pipeline {
+  agent any
+  stages {
+    stage('Build Angular') {
+      steps {
+        sh 'npm install'
+        sh 'npm run build --prod'
+      }
+    }
+    stage('Docker Build') {
+      steps {
+        sh 'docker build -t my-angular-app .'
+      }
+    }
+  }
+}

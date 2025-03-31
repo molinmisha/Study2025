@@ -1,0 +1,10 @@
+{
+"SpaProxyServer": {
+"ServerUrl": "https://localhost:54403",
+"RedirectUrl": "",
+"LaunchCommand": "npm start",
+"WorkingDirectory": "C:\\Users\\Misha\\source\\repos\\Study2025\\Study2025.Server\\..\\study2025.client",
+"MaxTimeoutInSeconds": "120",
+"KeepRunning": "false"
+}
+}

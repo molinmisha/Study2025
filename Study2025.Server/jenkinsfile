@@ -1,0 +1,15 @@
+pipeline {
+  agent any
+  stages {
+    stage('Build .NET') {
+      steps {
+        sh 'dotnet publish -c Release -o ./out'
+      }
+    }
+    stage('Docker Build') {
+      steps {
+        sh 'docker build -t my-dotnet-api .'
+      }
+    }
+  }
+} 

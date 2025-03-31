@@ -1,0 +1,50 @@
+﻿version: '3.8'
+services:
+  backend:
+    build:
+      context: ./Study2025.Server
+      dockerfile: Dockerfile
+    ports:
+      - "5000:5000"
+    environment:
+      - ASPNETCORE_URLS=http://+:5000
+    depends_on:
+      - frontend
+
+  frontend:
+    build:
+      context: ./study2025.client
+      dockerfile: Dockerfile
+    ports:
+      - "4200:80"
+
+
+
+# version: '3.8'
+
+# services:
+#   # C# сервер (API)
+#   api:
+#     build:
+#       context: ./Study2025.Server  # Путь к папке с Dockerfile сервера
+#       dockerfile: Dockerfile
+#     ports:
+#       - "5000:5000"  # Порт сервера (как в вашем Dockerfile)
+#     volumes:
+#       - ./Study2025.Server:/app  # Для hot-reload кода (если нужно)
+#     environment:
+#       - ASPNETCORE_ENVIRONMENT=Development
+#       - ASPNETCORE_URLS=http://+:5000
+
+#   # Angular клиент (запускается вне Docker для удобства разработки)
+#   # Настроим прокси к API, чтобы избежать CORS
+#   client:
+#     build:
+#       context: ./study2025.client  # Путь к папке с Angular
+#       dockerfile: Dockerfile.dev      # Специальный Dockerfile для разработки
+#     ports:
+#       - "4200:4200"
+#     volumes:
+#       - ./study2025.client:/app    # Для hot-reload
+#     depends_on:
+#       - api

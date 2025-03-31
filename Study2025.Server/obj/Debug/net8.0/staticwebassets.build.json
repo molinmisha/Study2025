@@ -1,0 +1,24 @@
+{
+  "Version": 1,
+  "Hash": "75Ab44yUNPHF5l/kNTUEWQCUyXSu/tmy3p+AfpQktaw=",
+  "Source": "Study2025.Server",
+  "BasePath": "_content/Study2025.Server",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [
+    {
+      "Identity": "C:\\Users\\Misha\\source\\repos\\Study2025\\study2025.client\\study2025.client.esproj",
+      "Version": 2,
+      "Source": "study2025.client",
+      "GetPublishAssetsTargets": "GetCurrentProjectPublishStaticWebAssetItems",
+      "AdditionalPublishProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalPublishPropertiesToRemove": "WebPublishProfileFile;TargetFramework",
+      "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
+      "AdditionalBuildProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;TargetFramework"
+    }
+  ],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

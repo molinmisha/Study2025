@@ -1,0 +1,17 @@
+# Angular
+client/node_modules/
+client/dist/
+client/.angular/
+
+# .NET
+server/bin/
+server/obj/
+server/.vs/
+
+# Общие
+*.log
+.env
+*.swp
+.DS_Store
+
+.vs/

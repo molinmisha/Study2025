@@ -10,6 +10,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{C4776AC8-7453-493D-94A9-0AE649846E57}"
 	ProjectSection(SolutionItems) = preProject
 		docker-compose.yaml = docker-compose.yaml
+		Dockerfile = Dockerfile
 		Jenkinsfile = Jenkinsfile
 		ReadMe.txt = ReadMe.txt
 	EndProjectSection

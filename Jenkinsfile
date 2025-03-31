@@ -11,7 +11,7 @@ pipeline {
         }
         stage('Install Node.js') {
             steps {
-                sh 'rm -f /var/lib/apt/lists/lock && rm -f /var/cache/apt/archives/lock && apt-get update && apt-get install -y nodejs npm'
+                sh 'sudo rm -f /var/lib/apt/lists/lock && sudo rm -f /var/cache/apt/archives/lock && apt-get update && apt-get install -y nodejs npm'
             }
         }
         stage('Build Angular') {

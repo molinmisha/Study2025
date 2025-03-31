@@ -11,12 +11,12 @@ pipeline {
         }
         stage('Install Node.js') {
             steps {
-                sh 'apt-get update && apt-get install -y sudo nodejs npm'
+                sh 'rm -f /var/lib/apt/lists/lock && rm -f /var/cache/apt/archives/lock && apt-get update && apt-get install -y nodejs npm'
             }
         }
         stage('Build Angular') {
             steps {
-                dir('client') {
+                dir('study2025.client') {
                     sh 'npm install'
                 }
             }

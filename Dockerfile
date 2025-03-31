@@ -1,5 +1,16 @@
 FROM jenkins/jenkins:lts
+
 USER root
-RUN apt-get update && apt-get install -y nodejs npm sudo
-RUN echo "jenkins ALL=(ALL) NOPASSWD: /usr/bin/apt-get, /bin/rm" >> /etc/sudoers
+
+# Установка зависимостей
+RUN apt-get update && \
+    apt-get install -y \
+    nodejs \
+    npm \
+    docker.io \
+    docker-compose
+
+# Добавляем jenkins в группу docker
+RUN usermod -aG docker jenkins
+
 USER jenkins

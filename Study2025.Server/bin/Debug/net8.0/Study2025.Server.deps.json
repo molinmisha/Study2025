@@ -8,7 +8,8 @@
     ".NETCoreApp,Version=v8.0": {
       "Study2025.Server/1.0.0": {
         "dependencies": {
-          "Microsoft.AspNetCore.SpaProxy": "8.0.14",
+          "Dapper": "2.1.66",
+          "Microsoft.AspNetCore.SpaProxy": "8.0.15",
           "Microsoft.EntityFrameworkCore": "9.0.3",
           "Microsoft.Extensions.DependencyInjection": "9.0.3",
           "Microsoft.Extensions.Diagnostics.HealthChecks": "9.0.3",
@@ -20,11 +21,19 @@
           "Study2025.Server.dll": {}
         }
       },
-      "Microsoft.AspNetCore.SpaProxy/8.0.14": {
+      "Dapper/2.1.66": {
+        "runtime": {
+          "lib/net8.0/Dapper.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.1.66.48463"
+          }
+        }
+      },
+      "Microsoft.AspNetCore.SpaProxy/8.0.15": {
         "runtime": {
           "lib/net8.0/Microsoft.AspNetCore.SpaProxy.dll": {
-            "assemblyVersion": "8.0.14.0",
-            "fileVersion": "8.0.1425.11221"
+            "assemblyVersion": "8.0.15.0",
+            "fileVersion": "8.0.1525.16505"
           }
         }
       },
@@ -297,12 +306,19 @@
       "serviceable": false,
       "sha512": ""
     },
-    "Microsoft.AspNetCore.SpaProxy/8.0.14": {
+    "Dapper/2.1.66": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-pkiYeNCNjZjSU5PVD6zlYSuDMCKNRHvhVF3O8pw6rPNNG7khKq8fIRbz/ROCLaiLTHVeOiNfsn8TSVYP0NIboA==",
-      "path": "microsoft.aspnetcore.spaproxy/8.0.14",
-      "hashPath": "microsoft.aspnetcore.spaproxy.8.0.14.nupkg.sha512"
+      "sha512": "sha512-/q77jUgDOS+bzkmk3Vy9SiWMaetTw+NOoPAV0xPBsGVAyljd5S6P+4RUW7R3ZUGGr9lDRyPKgAMj2UAOwvqZYw==",
+      "path": "dapper/2.1.66",
+      "hashPath": "dapper.2.1.66.nupkg.sha512"
+    },
+    "Microsoft.AspNetCore.SpaProxy/8.0.15": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Qni1g9jjcyiwkwB/+A9tf4lTJLUTniy/ktxQn+/9fxIjt8/Aqor+Cc5GThOwnz9WlN9L9m43q5WQ7zSx8u+UEA==",
+      "path": "microsoft.aspnetcore.spaproxy/8.0.15",
+      "hashPath": "microsoft.aspnetcore.spaproxy.8.0.15.nupkg.sha512"
     },
     "Microsoft.Bcl.AsyncInterfaces/9.0.3": {
       "type": "package",

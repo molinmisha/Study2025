@@ -21,6 +21,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<TestRepository>();
+builder.Services.AddScoped<TestRepositoryDapper>();
 
 
 //builder.Services.AddCors(options =>

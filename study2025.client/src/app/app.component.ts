@@ -2,6 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { TestDataService } from './TestItemsService';
 import { environment } from '../environments/environment';
+import { catchError, tap } from 'rxjs';
 
 interface WeatherForecast {
   date: string;
@@ -38,18 +39,19 @@ export class AppComponent implements OnInit {
   }
 
 
-  getForecasts() {
-
+  getForecasts(): void {
     let apiUrl = environment.apiUrl + '/weatherforecast';
 
-    this.http.get<WeatherForecast[]>(apiUrl).subscribe(
-      (result) => {
+    this.http.get<WeatherForecast[]>(apiUrl).pipe(
+      tap((result) => {
         this.forecasts = result;
-      },
-      (error) => {
+      }),
+      catchError((error) => {
         console.error(error);
-      }
-    );
+        // Здесь вы можете вернуть другой Observable или выбросить ошибку дальше
+        return []; // Пример: вернуть пустой массив, чтобы поток не сломался
+      })
+    ).subscribe(); // Подписываемся на пайпированный Observable
   }
 
 

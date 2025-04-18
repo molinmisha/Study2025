@@ -6,9 +6,9 @@ namespace Study2025.Server.Controllers
     [Route("[controller]")]
     public class TestItemsController : ControllerBase
     {
-        private readonly TestRepository _repository;
+        private readonly TestRepositoryDapper _repository;
 
-        public TestItemsController(TestRepository repository)
+        public TestItemsController(TestRepositoryDapper repository)
         {
             _repository = repository;
         }

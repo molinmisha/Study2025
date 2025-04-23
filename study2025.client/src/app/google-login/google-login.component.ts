@@ -12,9 +12,12 @@ import { environment } from '../../environments/environment';
 export class GoogleLoginComponent implements OnInit {
   clientId = environment.googleClientId;
 
+  
   constructor(private http: HttpClient) { }
 
   ngOnInit() {
+    console.log("clientId :" + this.clientId);
+
     // Load Google Identity Services script
     const script = document.createElement('script');
     script.src = 'https://accounts.google.com/gsi/client';

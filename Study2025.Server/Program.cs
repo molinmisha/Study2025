@@ -33,6 +33,17 @@ builder.Services.AddScoped<TestRepositoryDapper>();
 //            .AllowAnyHeader());
 //});
 
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAngular", builder =>
+    {
+        builder.WithOrigins("http://localhost:4200")
+               .AllowAnyMethod()
+               .AllowAnyHeader();
+    });
+});
+builder.Services.AddHttpClient();
+
 builder.Services.AddHealthChecks()
     .AddCheck("sample", () => HealthCheckResult.Healthy("OK")); // Простая проверка
 
@@ -66,6 +77,8 @@ app.UseCors(policy =>
 //          .AllowAnyHeader()
 //);
 
+app.UseHttpsRedirection();
+app.UseCors("AllowAngular");
 app.UseAuthorization();
 
 app.MapControllers();

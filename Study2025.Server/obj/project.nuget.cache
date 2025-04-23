@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "3Yon9yrzuDQ=",
+  "dgSpecHash": "WzKw03OgG8Q=",
   "success": true,
   "projectFilePath": "C:\\Users\\Misha\\source\\repos\\Study2025\\Study2025.Server\\Study2025.Server.csproj",
   "expectedPackageFiles": [
@@ -12,10 +12,12 @@
     "C:\\Users\\Misha\\.nuget\\packages\\grpc.aspnetcore\\2.70.0\\grpc.aspnetcore.2.70.0.nupkg.sha512",
     "C:\\Users\\Misha\\.nuget\\packages\\grpc.aspnetcore.server\\2.70.0\\grpc.aspnetcore.server.2.70.0.nupkg.sha512",
     "C:\\Users\\Misha\\.nuget\\packages\\grpc.aspnetcore.server.clientfactory\\2.70.0\\grpc.aspnetcore.server.clientfactory.2.70.0.nupkg.sha512",
+    "C:\\Users\\Misha\\.nuget\\packages\\grpc.aspnetcore.server.reflection\\2.70.0\\grpc.aspnetcore.server.reflection.2.70.0.nupkg.sha512",
     "C:\\Users\\Misha\\.nuget\\packages\\grpc.core.api\\2.70.0\\grpc.core.api.2.70.0.nupkg.sha512",
     "C:\\Users\\Misha\\.nuget\\packages\\grpc.net.client\\2.70.0\\grpc.net.client.2.70.0.nupkg.sha512",
     "C:\\Users\\Misha\\.nuget\\packages\\grpc.net.clientfactory\\2.70.0\\grpc.net.clientfactory.2.70.0.nupkg.sha512",
     "C:\\Users\\Misha\\.nuget\\packages\\grpc.net.common\\2.70.0\\grpc.net.common.2.70.0.nupkg.sha512",
+    "C:\\Users\\Misha\\.nuget\\packages\\grpc.reflection\\2.70.0\\grpc.reflection.2.70.0.nupkg.sha512",
     "C:\\Users\\Misha\\.nuget\\packages\\grpc.tools\\2.71.0\\grpc.tools.2.71.0.nupkg.sha512",
     "C:\\Users\\Misha\\.nuget\\packages\\microsoft.aspnetcore.spaproxy\\8.0.15\\microsoft.aspnetcore.spaproxy.8.0.15.nupkg.sha512",
     "C:\\Users\\Misha\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\9.0.3\\microsoft.bcl.asyncinterfaces.9.0.3.nupkg.sha512",
